@@ -4,28 +4,24 @@
             <meta charset="utf-8">
             <link rel="stylesheet" href="style.css">
             <script src="script.js" defer></script>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cabin+Sketch&display=swap" rel="stylesheet"> 
         </head>
-        <body>
-
-
         <div class="game">
             <h1>Tic Tac Toe</h1>
-            <!-- modal pop up-->
-            <!-- <div class="modal"> -->
-                <!-- <h1>Start new tic tac toe game</h1> -->
-                <form action="">
-                    <div>
-                    <label for="player-1-name">Name of first player</label><br>
-                    <input class="input-field" type="text" id="player-1-name" name="player-1-name">
+                <form>
+                    <div class="player-1-name">
+                    <!-- <label for="player-1-name">Name of first player</label><br> -->
+                    <input class="input-field" placeholder="Name of first player" type="text" id="player-1-name" name="player-1-name">
                     </div>
-                    <div>
-                    <label for="player-2-name">Name of second player</label><br>
-                    <input class="input-field" type="text" id="player-2-name" name="player-2-name">
+                    <div class="player-2-name">
+                    <!-- <label for="player-2-name">Name of second player</label><br> -->
+                    <input class="input-field" placeholder="Name of second player" type="text" id="player-2-name" name="player-2-name">
                     </div>    
-                    <div><div class="submit-player-names">Begin Game</div></div>
+                    <div class="submit-button"><div class="submit-player-names">Begin Game</div></div>
                 </form>
-            <!-- </div> -->
-            <p class="current-player"></p>
+            <p class="current-player">&thinsp;</p>
+            <div class="restart-button hide">Restart Game</div>
             <div class="gameboard">
                 <div class="game-square" data-cell="0"></div>
                 <div class="game-square" data-cell="1"></div>
@@ -39,6 +35,6 @@
                 <div class="game-square" data-cell="7"></div>
                 <div class="game-square" data-cell="8"></div>
             </div>
+            
         </div>
-        </body>
     </html>
