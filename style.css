@@ -113,6 +113,13 @@ cursor: pointer;
         border: 2px solid #000;
         font-size: 16vw;
     }
+    .player-1-name,.player-2-name {
+        width: 100%;
+    }
+    .input-field {
+        width: 100%;
+        margin: 5px;
+    }
 }
 
 @media (max-width: 500px) {
