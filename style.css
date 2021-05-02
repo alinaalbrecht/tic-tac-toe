@@ -104,7 +104,7 @@ margin: 0 auto 40px;
 cursor: pointer;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     :root {
         --width: 18vw;
         --height: 18vw;
@@ -115,7 +115,7 @@ cursor: pointer;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     :root {
         --width: 30vw;
         --height: 30vw;
