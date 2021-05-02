@@ -109,11 +109,22 @@ cursor: pointer;
         --width: 18vw;
         --height: 18vw;
     }
+    .game-square {
+        border: 2px solid #000;
+        font-size: 16vw;
+    }
 }
 
 @media screen and (max-width: 500px) {
     :root {
         --width: 30vw;
         --height: 30vw;
+    }
+
+    .game-square {
+        font-size: 30vw;
+    }
+    .restart-button {
+        width: 40%;
     }
 }
