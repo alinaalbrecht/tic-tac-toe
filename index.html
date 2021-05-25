@@ -1,40 +1,60 @@
-<DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <link rel="stylesheet" href="style.css">
-            <script src="script.js" defer></script>
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cabin+Sketch&display=swap" rel="stylesheet"> 
-        </head>
-        <div class="game">
-            <h1>Tic Tac Toe</h1>
-                <form>
-                    <div class="player-1-name">
-                    <!-- <label for="player-1-name">Name of first player</label><br> -->
-                    <input class="input-field" placeholder="Name of first player" type="text" id="player-1-name" name="player-1-name">
-                    </div>
-                    <div class="player-2-name">
-                    <!-- <label for="player-2-name">Name of second player</label><br> -->
-                    <input class="input-field" placeholder="Name of second player" type="text" id="player-2-name" name="player-2-name">
-                    </div>    
-                    <div class="submit-button"><div class="submit-player-names">Begin Game</div></div>
-                </form>
-            <p class="current-player">&thinsp;</p>
-            <div class="restart-button hide">Restart Game</div>
-            <div class="gameboard">
-                <div class="game-square" data-cell="0"></div>
-                <div class="game-square" data-cell="1"></div>
-                <div class="game-square" data-cell="2"></div>
-    
-                <div class="game-square" data-cell="3"></div>
-                <div class="game-square" data-cell="4"></div>
-                <div class="game-square" data-cell="5"></div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cabin+Sketch&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <div class="game">
+    <h1>Tic Tac Toe</h1>
+    <form>
+      <div class="player-1-name">
+        <!-- <label for="player-1-name">Name of first player</label><br> -->
+        <input
+          class="input-field"
+          placeholder="Name of first player"
+          type="text"
+          id="player-1-name"
+          name="player-1-name"
+        />
+      </div>
+      <div class="player-2-name">
+        <!-- <label for="player-2-name">Name of second player</label><br> -->
+        <input
+          class="input-field"
+          placeholder="Name of second player"
+          type="text"
+          id="player-2-name"
+          name="player-2-name"
+        />
+      </div>
+      <div class="submit-button">
+        <div class="submit-player-names">Begin Game</div>
+      </div>
+    </form>
+    <p class="current-player">&thinsp;</p>
+    <div class="restart-button hide">Restart Game</div>
+    <div class="gameboard">
+      <div class="game-square" data-cell="0"></div>
+      <div class="game-square" data-cell="1"></div>
+      <div class="game-square" data-cell="2"></div>
 
-                <div class="game-square" data-cell="6"></div>
-                <div class="game-square" data-cell="7"></div>
-                <div class="game-square" data-cell="8"></div>
-            </div>
-            
-        </div>
-    </html>
+      <div class="game-square" data-cell="3"></div>
+      <div class="game-square" data-cell="4"></div>
+      <div class="game-square" data-cell="5"></div>
+
+      <div class="game-square" data-cell="6"></div>
+      <div class="game-square" data-cell="7"></div>
+      <div class="game-square" data-cell="8"></div>
+    </div>
+  </div>
+</html>

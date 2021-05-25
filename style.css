@@ -1,137 +1,138 @@
 :root {
-    --width: 12vw;
-    --height: 12vw;
-  }
+  --width: 12vw;
+  --height: 12vw;
+}
 
 .hide {
-    display: none;
+  display: none;
 }
 
 form {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    flex-wrap: wrap;
-    font-size: 20px;
-    justify-content: space-between;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+  justify-content: space-between;
 }
 
 .gameboard {
-    display: grid;
-    grid-template-columns: repeat(3, var(--width));
-    grid-template-rows: repeat(3, var(--height));
-    justify-content: center;
-    width: 99vw;
-    height: 100vh;
-    margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, var(--width));
+  grid-template-rows: repeat(3, var(--height));
+  justify-content: center;
+  width: 99vw;
+  height: 100vh;
+  margin: 0;
 }
 
-.game-square:nth-child(-n+3) {
-    border-top: hidden;
+.game-square:nth-child(-n + 3) {
+  border-top: hidden;
 }
 
-.game-square:nth-child(3n+1) {
-    border-left: hidden;
+.game-square:nth-child(3n + 1) {
+  border-left: hidden;
 }
 
-.game-square:nth-child(3n+3) {
-    border-right: hidden;
+.game-square:nth-child(3n + 3) {
+  border-right: hidden;
 }
 
-.game-square:nth-child(n+7) {
-    border-bottom: hidden;
+.game-square:nth-child(n + 7) {
+  border-bottom: hidden;
 }
 
 .game-square {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-    border: 4px solid #000;
-    vertical-align: middle;
-    font-size: 12vw;
-    font-family: 'Cabin Sketch', cursive;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border: 4px solid #000;
+  vertical-align: middle;
+  font-size: 12vw;
+  font-family: "Cabin Sketch", cursive;
 }
 
 .game {
-    text-align: center;
-    font-family: 'Amatic SC', cursive;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
-    font-size: 5em;
-    margin: 20px;
+  font-size: 5em;
+  margin: 20px;
 }
 
 .submit-button {
-    flex-basis: 100%;
-    background: #000;
-    color: #fff;
-    margin-top: 20px;
-    padding: 5px 0;
-    border-radius: 5px;
-    cursor: pointer;
+  flex-basis: 100%;
+  background: #000;
+  color: #fff;
+  margin-top: 20px;
+  padding: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .input-field {
-    box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: 'Amatic SC', cursive;
-    font-size: 18px;
-    padding: 5px 10px;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid #6f6f6f;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Amatic SC", cursive;
+  font-size: 18px;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #6f6f6f;
 }
 
 .current-player {
-    margin: 0px 0 20px;
-    font-size: 1.5em;
+  margin: 0px 0 20px;
+  font-size: 1.5em;
 }
 
 .restart-button {
-background: #000;
-color: #fff;
-font-size: 20px;
-padding: 5px 0;
-border-radius: 5px;
-width: 20%;
-margin: 0 auto 40px;
-cursor: pointer;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 0;
+  border-radius: 5px;
+  width: 20%;
+  margin: 0 auto 40px;
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
-    :root {
-        --width: 18vw;
-        --height: 18vw;
-    }
-    .game-square {
-        border: 2px solid #000;
-        font-size: 16vw;
-    }
-    .player-1-name,.player-2-name {
-        width: 100%;
-    }
-    .input-field {
-        width: 100%;
-        margin: 5px;
-    }
+  :root {
+    --width: 18vw;
+    --height: 18vw;
+  }
+  .game-square {
+    border: 2px solid #000;
+    font-size: 16vw;
+  }
+  .player-1-name,
+  .player-2-name {
+    width: 100%;
+  }
+  .input-field {
+    width: 100%;
+    margin: 5px;
+  }
 }
 
 @media (max-width: 500px) {
-    :root {
-        --width: 30vw;
-        --height: 30vw;
-    }
+  :root {
+    --width: 30vw;
+    --height: 30vw;
+  }
 
-    .game-square {
-        font-size: 30vw;
-    }
-    .restart-button {
-        width: 40%;
-    }
+  .game-square {
+    font-size: 30vw;
+  }
+  .restart-button {
+    width: 40%;
+  }
 }
